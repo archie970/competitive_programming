@@ -1,8 +1,5 @@
 
 #include <iostream>
-
-
-
 using namespace std;
 bool comp(int a, int b)   
 {   
