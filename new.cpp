@@ -2,29 +2,31 @@
 using namespace std;
 int main()
 {
-    int a =0; 
-    int b;
-    cin >>b ;
-    for (int i = 0; i < b; i++)
-    {
-        
-        string c;
-        cin >>c ;
-        if (c[1]=='+')
-        {
-           a = a+1;
-        }
-        else
-        {
-            a = a-1;
-        }
-        
-        
+ int count;
+ cin >>count ;
+ int i =1;
+vector <pair<int,int> > v;
+int n ;
+ while(count--)
 
+ {
+    cin>>n;
+    pair <int ,int> p= {n,i++};
     
+    v.push_back(p);
+
+ }
+    sort(v.begin(), v.end());
+  
+     // Printing the sorted vector(after using sort())
+    cout << "The vector after sort operation is:\n" ;
+    for (int i=0; i<n; i++)
+    {
+        // "first" and "second" are used to access
+        // 1st and 2nd element of pair respectively
+        cout << v[i].first << " "
+             << v[i].second << endl;
     }
-    
-    cout<<a;
-        
-    return 0;
+
+return 0;
 }
