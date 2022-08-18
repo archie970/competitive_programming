@@ -14,7 +14,7 @@ for (auto i : s)
         
     }
 }
-cout<<flag<<endl;
+// cout<<flag<<endl;
 if (flag==0)
 {
     cout<<"NO";
