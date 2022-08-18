@@ -4,7 +4,7 @@ int main()
 {
  int count;
  cin >>count ;
- vector <int>  v;
+ 
  int max = 0;
  int p = 0;
  while(count--)
